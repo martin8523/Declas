@@ -490,7 +490,7 @@ function splitRunsToWords(runs){
         text: tok,
         b: !!run.b,
         i: !!run.i,
-        u: !!run.u,
+        //u: !!run.u,
         noSpaceBefore: idx === 0 ? forceNoSpace : false
       });
     });
@@ -558,7 +558,7 @@ function renderParrafo(doc, parrafo, x, y, maxWidth, lineHeight, fontSize){
       doc.text(w.text, cx, y);
       const wWidth = doc.getTextWidth(w.text);
       if(w.u){
-        doc.setLineWidth(0.5);
+        doc.setLineWidth(0.1);
         doc.line(cx, y + 1.3, cx + wWidth, y + 1.3);
       }
       cx += wWidth;
