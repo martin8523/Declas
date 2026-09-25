@@ -273,7 +273,7 @@
       </div>
       <hr class="sheet-rule">
 
-      <p>Quien suscribe, en su carácter de Encargado de Servicios Sociales y Representante de la mesa directiva de la Cooperativa Eléctrica de Consumo y Otros Servicios de Saladillo Limitada, certifica que:</p>
+      <p>Quien suscribe, en su carácter de Representante de la mesa directiva de la Cooperativa Eléctrica de Consumo y Otros Servicios de Saladillo Limitada, certifica que:</p>
 
       <p>El <i>día</i> <b><u id="p-fecha">__/__/____</u></b>, falleció el/la:</p>
 
@@ -416,7 +416,7 @@ function buildParrafos(d){
     {
       align: "justify",
       runs: [
-        {t:"Quien suscribe, en su carácter de Encargado de Servicios Sociales y Representante de la mesa directiva de la Cooperativa Eléctrica de Consumo y Otros Servicios de Saladillo Limitada, certifica que:"}
+        {t:"Quien suscribe, en su carácter de Representante de la mesa directiva de la Cooperativa Eléctrica de Consumo y Otros Servicios de Saladillo Limitada, certifica que:"}
       ]
     },
     {
@@ -424,7 +424,7 @@ function buildParrafos(d){
       runs: [
         {t:"El "},
         {t:"día ", i:true},
-        {t:fechaFallText, b:true, u:true, glueNext:true},
+        {t:fechaFallText, b:true, glueNext:true},
         {t:", falleció el/la:"}
       ]
     },
@@ -432,7 +432,7 @@ function buildParrafos(d){
       align: "center",
       runs: [
         {t:"Sr/a: "},
-        {t:nombreUp || "________________", b:true, u:true},
+        {t:nombreUp || "________________", b:true},
         {t:" DNI: "},
         {t:d.dni || "________", b:true}
       ]
@@ -441,9 +441,9 @@ function buildParrafos(d){
       align: "justify",
       runs: [
         {t:"Domiciliado/a en "},
-        {t:d.domicilio || "________________", b:true, u:true},
+        {t:d.domicilio || "________________", b:true},
         {t:" quien se hallaba afiliado/da a los Servicios Sociales, mediante el pago mensual de la cuota correspondiente al sistema que presta esta Entidad con el N° de Socio: "},
-        {t:d.socio || "____", b:true, u:true},
+        {t:d.socio || "____", b:true},
         {t:" Cuenta: "},
         {t:d.cuenta || "____", b:true}
       ]
@@ -462,7 +462,7 @@ function buildParrafos(d){
         {t:"Al sólo efecto de ser presentado en "},
         {t:d.entidad || "ANSES", b:true, i:true},
         {t:" ; ante quien corresponda, se extiende la presente Certificación, en Saladillo, Provincia de Buenos Aires, a los "},
-        {t:certifText, b:true, i:true, u:true, glueNext:true},
+        {t:certifText, b:true, i:true, glueNext:true},
         {t:".-------------------------------------------"}
       ]
     }
