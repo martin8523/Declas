@@ -560,7 +560,7 @@ function renderParrafo(doc, parrafo, x, y, maxWidth, lineHeight, fontSize){
       doc.text(w.text, cx, y);
       const wWidth = doc.getTextWidth(w.text);
       if(w.u){
-        doc.setLineWidth(0.5);
+        doc.setLineWidth(0);
         doc.line(cx, y + 1.3, cx + wWidth, y + 1.3);
       }
       cx += wWidth;
@@ -587,7 +587,7 @@ async function generarPDF(){
   const pageWidth = doc.internal.pageSize.getWidth();
   const maxWidth = pageWidth - marginX*2;
   const fontSize = 11.5;
-  const lineHeight = 6.3;
+  const lineHeight = 0;
 
   let y = 24;
 
@@ -602,7 +602,7 @@ async function generarPDF(){
 
   // línea verde
   doc.setDrawColor(50, 159, 44);
-  doc.setLineWidth(0.9);
+  doc.setLineWidth(0);
   doc.line(marginX, y, pageWidth - marginX, y);
   y += 12;
 
